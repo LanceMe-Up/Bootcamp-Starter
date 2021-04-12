@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Add post</title>
+  </head>
+  <body>
+    <div class="add-post-container">
+      <div class="add-post-content">
+        <h1 class="add-post-title">Add Post</h1>
+        <p class="auth-desc">Enter your post title, description, image</p>
+        <form class="auth-form" enctype="multipart/form-data">
+          <div class="form-item">
+            <label>Title</label>
+            <input type="text" name="title" placeholder="Title" />
+          </div>
+          <div class="form-item">
+            <label>Image File</label>
+            <label class="image-button"
+              >Choose an image file <input type="file" name="image" hidden
+            /></label>
+          </div>
+          <div class="form-item">
+            <label>Description</label>
+            <textarea
+              name="description"
+              rows="7"
+              placeholder="Description"
+            ></textarea>
+          </div>
+
+          <div class="auth-button-container">
+            <button type="submit" class="auth-button">Add Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
